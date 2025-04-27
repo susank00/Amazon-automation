@@ -33,7 +33,8 @@ Clone the Repository:
 ```bash
 git clone https://github.com/susank00/Amazon-automation.git
 Navigate to the Project Directory:
-cd amazonUIautomation
+cd Amazon-automation
+
 npm install
 node amazonTest.js
 
