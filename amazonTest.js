@@ -170,11 +170,6 @@ const fs = require("fs");
     }
   } catch (err) {
     console.error("Test Error:", err);
-    await driver.takeScreenshot().then((image) => {
-      fs.writeFileSync("error-screenshot.png", image, "base64");
-    });
-    let pageSource = await driver.getPageSource();
-    fs.writeFileSync("page-source.html", pageSource);
     throw err;
   } finally {
     await driver.quit();
